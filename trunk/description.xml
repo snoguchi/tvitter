@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Information>
+  <name>tvitter</name>
+  <provider>o2curry</provider> 
+  <detail>TVでtwitterが楽しめます。\n\nアプリ設定でアカウントを設定して使ってください。</detail>
+  <contact>http://ctlaltdel.net/tvitter/</contact>
+  <url>http://ctlaltdel.net/tvitter/</url>
+</Information>

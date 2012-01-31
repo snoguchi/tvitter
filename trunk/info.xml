@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Info>
+  <name>tvitter</name>
+  <description>TVでtwitter</description>
+  <provider>o2curry</provider>
+  <preference>1</preference>
+  <duplicable>1</duplicable>
+  <height>165</height>
+  <width>280</width>
+  <profile>
+    <spec>AC2.0</spec>
+  </profile>
+</Info>
