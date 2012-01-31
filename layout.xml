@@ -1,0 +1,217 @@
+<?xml version="1.0"?>
+<Widget>
+  <Component name="widget">
+
+    <Component name="normal">
+      <Prim type="rect" w="280" h="165" rgba="ffffffff"/>
+      <Prim type="rect" y="19" w="280" h="130" rgba="ddddddff"/>
+      <Prim type="line" x="-140" y="-47" x2="140" y2="-47" rgba="999999ff"/>
+
+      <Bitmap name="logo" x="-75" y="-65"/>
+
+      <Component name="menu" x="67" y="-56">
+        <Text name="label" y="-14" size="10" alignment="center" rgba="444444ff"/>
+        <Prim type="rect" w="146" h="20" rgba="b6b6b6ff"/>
+        <Prim type="outline" x="-58" w="30" h="20" rgba="999999ff"/>
+        <Prim type="outline" x="-29" w="30" h="20" rgba="999999ff"/>
+        <Prim type="outline" x="0"   w="30" h="20" rgba="999999ff"/>
+        <Prim type="outline" x="29"  w="30" h="20" rgba="999999ff"/>
+        <Prim type="outline" x="58"  w="30" h="20" rgba="999999ff"/>
+        <Prim name="selector" type="rect" x="-58" y="1" w="28" h="20" rgba="ddddddff"/>
+        <Bitmap name="home"      x="-58"/>
+        <Bitmap name="replies"   x="-29"/>
+        <Bitmap name="messages"  x="0"/>
+        <Bitmap name="favorites" x="29"/>
+        <Bitmap name="everyone"  x="58"/>
+      </Component>
+
+      <Component name="item" y="19">
+        <Prim type="rect" w="272" h="122" rgba="f0f0f0ff"/>
+        <Prim type="outline" w="272" h="122" rgba="aaaaaaff"/>
+        <Component name="frame" x="-4" w="264" h="120" visible="0">
+          <Prim name="selector" type="rect" w="262" h="0" rgba="85d3ffff" visible="0"/>
+          <Component name="item0" h="24">
+            <Bitmap name="icon" x="-118" w="20" h="20"/>
+            <Memo2D name="user" x="-105" y="-8" w="60"  h="15" font_size="14" rgba="0000ffff" exceed_dot="1" fade_frames="0"/>
+            <Memo2D name="text" x="-40"  y="-8" w="170" h="15" font_size="14" rgba="000000ff" exceed_dot="1" fade_frames="0"/>
+          </Component>
+          <Component name="item1" h="24">
+            <Bitmap name="icon" x="-118" w="20" h="20"/>
+            <Memo2D name="user" x="-105" y="-8" w="60"  h="15" font_size="14" rgba="0000ffff" exceed_dot="1" fade_frames="0"/>
+            <Memo2D name="text" x="-40"  y="-8" w="170" h="15" font_size="14" rgba="000000ff" exceed_dot="1" fade_frames="0"/>
+          </Component>
+          <Component name="item2" h="24">
+            <Bitmap name="icon" x="-118" w="20" h="20"/>
+            <Memo2D name="user" x="-105" y="-8" w="60"  h="15" font_size="14" rgba="0000ffff" exceed_dot="1" fade_frames="0"/>
+            <Memo2D name="text" x="-40"  y="-8" w="170" h="15" font_size="14" rgba="000000ff" exceed_dot="1" fade_frames="0"/>
+          </Component>
+          <Component name="item3" h="24">
+            <Bitmap name="icon" x="-118" w="20" h="20"/>
+            <Memo2D name="user" x="-105" y="-8" w="60"  h="15" font_size="14" rgba="0000ffff" exceed_dot="1" fade_frames="0"/>
+            <Memo2D name="text" x="-40"  y="-8" w="170" h="15" font_size="14" rgba="000000ff" exceed_dot="1" fade_frames="0"/>
+          </Component>
+          <Component name="item4" h="24">
+            <Bitmap name="icon" x="-118" w="20" h="20"/>
+            <Memo2D name="user" x="-105" y="-8" w="60"  h="15" font_size="14" rgba="0000ffff" exceed_dot="1" fade_frames="0"/>
+            <Memo2D name="text" x="-40"  y="-8" w="170" h="15" font_size="14" rgba="000000ff" exceed_dot="1" fade_frames="0"/>
+          </Component>
+        </Component>
+        <Component name="scrollbar" x="131" h="118" visible="0">
+          <Prim type="rect"    w="8" h="120" rgba="aaaaaaff"/>
+          <Prim type="outline" w="8" h="120" rgba="999999ff"/>
+          <Component name="thumb" visible="0">
+            <Prim name="bg" type="rect" w="8" h="118" rgba="ddddddff"/>
+            <Prim name="fg" type="outline" w="8" h="118" rgba="888888ff"/>
+          </Component>
+        </Component>
+      </Component>
+      <Prim type="outline" w="280" h="165" rgba="ff0000ff" visible="0"/>
+    </Component>
+
+
+    <Component name="active" x="10" visible="0">
+      <Component name="item" y="34">
+        <Prim type="rect" w="300" h="422" rgba="ddddddff"/>
+        <Prim type="rect" w="292" h="422" rgba="f0f0f0ff"/>
+        <Prim type="outline" w="292" h="422" rgba="aaaaaaff"/>
+        <Component name="frame" x="-4" w="284" h="420">
+          <Prim name="selector" type="rect" w="282" h="0" rgba="85d3ffff" visible="0"/>
+          <Component name="item0" y="30" h="60">
+            <Prim name="bg" type="outline" x="4" w="290" h="60" rgba="ccccccff"/>
+            <Component name="offset">
+              <Prim type="outline" x="-112" w="50" h="50" rgba="ddddddff"/>
+              <Bitmap name="icon" x="-112" y="0" w="48" h="48"/>
+              <Text   name="user" x="-84" y="-12" size="14" rgba="0000ffff"/>
+              <Text   name="date" x="135" y="-12" size="12" alignment="right" rgba="777777ff"/>
+              <Bitmap name="star" x="65" y="-18" visible="0"/>
+              <Memo2D name="text" x="-84" y="-8" w="220" h="36" font_size="14" spacing_v="2" rgba="000000FF" exceed_dot="1" fade_frames="0" scroll="1"/>
+            </Component>
+          </Component>
+          <Component name="item1" y="90" h="60">
+            <Prim name="bg" type="outline" x="4" w="290" h="60" rgba="ccccccff"/>
+            <Component name="offset">
+              <Prim type="outline" x="-112" w="50" h="50" rgba="ddddddff"/>
+              <Bitmap name="icon" x="-112" y="0" w="48" h="48"/>
+              <Text   name="user" x="-84" y="-12" size="14" rgba="0000ffff"/>
+              <Text   name="date" x="135" y="-12" size="12" alignment="right" rgba="777777ff"/>
+              <Bitmap name="star" x="65" y="-18" visible="0"/>
+              <Memo2D name="text" x="-84" y="-8" w="220" h="36" font_size="14" spacing_v="2" rgba="000000FF" exceed_dot="1" fade_frames="0" scroll="1"/>
+            </Component>
+          </Component>
+          <Component name="item2" y="150" h="60">
+            <Prim name="bg" type="outline" x="4" w="290" h="60" rgba="ccccccff"/>
+            <Component name="offset">
+              <Prim type="outline" x="-112" w="50" h="50" rgba="ddddddff"/>
+              <Bitmap name="icon" x="-112" y="0" w="48" h="48"/>
+              <Text   name="user" x="-84" y="-12" size="14" rgba="0000ffff"/>
+              <Text   name="date" x="135" y="-12" size="12" alignment="right" rgba="777777ff"/>
+              <Bitmap name="star" x="65" y="-18" visible="0"/>
+              <Memo2D name="text" x="-84" y="-8" w="220" h="36" font_size="14" spacing_v="2" rgba="000000FF" exceed_dot="1" fade_frames="0" scroll="1"/>
+            </Component>
+          </Component>
+          <Component name="item3" y="210" h="60">
+            <Prim name="bg" type="outline" x="4" w="290" h="60" rgba="ccccccff"/>
+            <Component name="offset">
+              <Prim type="outline" x="-112" w="50" h="50" rgba="ddddddff"/>
+              <Bitmap name="icon" x="-112" y="0" w="48" h="48"/>
+              <Text   name="user" x="-84" y="-12" size="14" rgba="0000ffff"/>
+              <Text   name="date" x="135" y="-12" size="12" alignment="right" rgba="777777ff"/>
+              <Bitmap name="star" x="65" y="-18" visible="0"/>
+              <Memo2D name="text" x="-84" y="-8" w="220" h="36" font_size="14" spacing_v="2" rgba="000000FF" exceed_dot="1" fade_frames="0" scroll="1"/>
+            </Component>
+          </Component>
+          <Component name="item4" y="270" h="60">
+            <Prim name="bg" type="outline" x="4" w="290" h="60" rgba="ccccccff"/>
+            <Component name="offset">
+              <Prim type="outline" x="-112" w="50" h="50" rgba="ddddddff"/>
+              <Bitmap name="icon" x="-112" y="0" w="48" h="48"/>
+              <Text   name="user" x="-84" y="-12" size="14" rgba="0000ffff"/>
+              <Text   name="date" x="135" y="-12" size="12" alignment="right" rgba="777777ff"/>
+              <Bitmap name="star" x="65" y="-18" visible="0"/>
+              <Memo2D name="text" x="-84" y="-8" w="220" h="36" font_size="14" spacing_v="2" rgba="000000FF" exceed_dot="1" fade_frames="0" scroll="1"/>
+            </Component>
+          </Component>
+          <Component name="item5" y="330" h="60">
+            <Prim name="bg" type="outline" x="4" w="290" h="60" rgba="ccccccff"/>
+            <Component name="offset">
+              <Prim type="outline" x="-112" w="50" h="50" rgba="ddddddff"/>
+              <Bitmap name="icon" x="-112" y="0" w="48" h="48"/>
+              <Text   name="user" x="-84" y="-12" size="14" rgba="0000ffff"/>
+              <Text   name="date" x="135" y="-12" size="12" alignment="right" rgba="777777ff"/>
+              <Bitmap name="star" x="65" y="-18" visible="0"/>
+              <Memo2D name="text" x="-84" y="-8" w="220" h="36" font_size="14" spacing_v="2" rgba="000000FF" exceed_dot="1" fade_frames="0" scroll="1"/>
+            </Component>
+          </Component>
+          <Component name="item6" y="390" h="60">
+            <Prim name="bg" type="outline" x="4" w="290" h="60" rgba="ccccccff"/>
+            <Component name="offset">
+              <Prim type="outline" x="-112" w="50" h="50" rgba="ddddddff"/>
+              <Bitmap name="icon" x="-112" y="0" w="48" h="48"/>
+              <Text   name="user" x="-84" y="-12" size="14" rgba="0000ffff"/>
+              <Text   name="date" x="135" y="-12" size="12" alignment="right" rgba="777777ff"/>
+              <Bitmap name="star" x="65" y="-18" visible="0"/>
+              <Memo2D name="text" x="-84" y="-8" w="220" h="36" font_size="14" spacing_v="2" rgba="000000FF" exceed_dot="1" fade_frames="0" scroll="1"/>
+            </Component>
+          </Component>
+        </Component>
+        <Component name="scrollbar" x="141" h="420" visible="0">
+          <Prim type="rect"    w="8" h="420" rgba="aaaaaaff"/>
+          <Prim type="outline" w="8" h="420" rgba="999999ff"/>
+          <Component name="thumb" visible="0">
+            <Prim name="bg" type="rect" w="8" h="100" rgba="ddddddff"/>
+            <Prim name="fg" type="outline" w="8" h="100" rgba="888888ff"/>
+          </Component>
+        </Component>
+      </Component>
+
+      <Prim type="rect" y="-231" w="300" h="36" rgba="ffffffff"/>
+      <Prim type="rect" y="-195" w="300" h="36" rgba="ddddddff"/>
+      <Prim type="rect" y="247" w="300" h="5" rgba="ddddddff"/>
+      <Prim type="line" x="-150" y="-213" x2="150" y2="-213" rgba="999999ff"/>
+
+      <Bitmap name="logo" x="-80" y="-232"/>
+
+      <Component name="menu" x="77" y="-222">
+        <Text name="label" y="-14" size="10" alignment="center" rgba="444444ff"/>
+        <Prim type="rect" w="146" h="20" rgba="b6b6b6ff"/>
+        <Prim type="outline" x="-58" w="30" h="20" rgba="999999ff"/>
+        <Prim type="outline" x="-29" w="30" h="20" rgba="999999ff"/>
+        <Prim type="outline" x="0"   w="30" h="20" rgba="999999ff"/>
+        <Prim type="outline" x="29"  w="30" h="20" rgba="999999ff"/>
+        <Prim type="outline" x="58"  w="30" h="20" rgba="999999ff"/>
+        <Prim name="selector" type="rect" x="-58" y="1" w="28" h="20" rgba="ddddddff"/>
+        <Bitmap name="home"      x="-58"/>
+        <Bitmap name="replies"   x="-29"/>
+        <Bitmap name="messages"  x="0"/>
+        <Bitmap name="favorites" x="29"/>
+        <Bitmap name="everyone"  x="58"/>
+      </Component>
+
+      <Component name="input" y="-195">
+        <Text x="-80" y="6" size="14" rgba="222222ff" alignment="center" str="いまなにしてる？"/>
+	<Component x="100">
+          <Prim type="rect"    w="80" h="20" rgba="efefefff"/>
+          <Prim type="outline" w="80" h="20" rgba="ccccccff"/>
+          <Component name="selector" visible="0">
+            <Prim type="rect" w="80" h="20" rgba="85d3ffff"/>
+	    <Prim type="outline" w="80" h="20" rgba="999999ff"/>
+          </Component>
+	  <Text y="6" size="14" rgba="222222ff" alignment="center" str="投稿する"/>
+        </Component>
+      </Component>
+
+      <!-- clip -->
+      <Prim type="rect" y="-260" w="300" h="20" rgba="000000ff"/>
+      <Prim type="rect" y="260" w="300" h="20" rgba="000000ff"/>
+    </Component>
+
+    <Component name="msg" y="15" visible="0">
+      <Prim type="rect" w="200" h="40" rgba="000000dd"/>
+      <Text name="text" y="8" w="300" size="16" alignment="center" rgba="ffffffff"/>
+    </Component>
+
+    <!-- debug -->
+    <Prim type="outline" x="10" w="300" h="500" rgba="ff0000ff" visible="0"/>
+
+  </Component>
+</Widget>
